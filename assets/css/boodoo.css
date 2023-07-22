@@ -1,0 +1,1220 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --white: #ffffff;
+    --red: #C8191C;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Alegreya';
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--white);
+}
+a:hover {
+    color: var(--red);
+}
+p {
+    line-height: 2.4rem;
+    margin-bottom: 0;
+}
+img {
+    display: inline-block;
+    object-fit: cover;
+    object-position: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+h1 {
+    font-size: 13rem;
+    line-height: 16rem;
+    margin-bottom: 5.5rem;
+}
+h2 {
+    font-size: 13rem;
+    line-height: 19rem;
+}
+h3 {
+    font-size: 8.4rem;
+    line-height: 11.4rem;
+}
+h4 {
+    font-size: 5.4rem;
+    line-height: 7.3rem;
+}
+h5 {
+    font-size: 4.4rem;
+    line-height: 6rem;
+}
+h6 {
+    color: var(--red);
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+}
+.pt_200 {
+    padding-top: 20rem;
+}
+.pb_200 {
+    padding-bottom: 20rem;
+}
+.pt_100 {
+    padding-top: 10rem;
+}
+.pb_100 {
+    padding-bottom: 10rem;
+}
+.mt_100 {
+    margin-top: 10rem;
+}
+.mb_100 {
+    margin-bottom: 10rem;
+}
+.mb_80 {
+    margin-bottom: 8rem;
+}
+.red_text {
+    color: var(--red);
+}
+.red_btn {
+    background-color: var(--red);
+    color: var(--white);
+    padding: 1.5rem;
+    width: 30rem;
+    height: 6.3rem;
+    line-height: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.4rem;
+    cursor: pointer;
+    border: 0.2rem solid var(--red);
+    transition: all 0.3s;
+}
+.red_btn:hover {
+    background-color: transparent;
+    color: var(--red);
+}
+.red_bg {
+    background-color: var(--red);
+    border-color: var(--red) !important;
+}
+.red_bg .red_btn {
+    background-color: var(--white);
+    color: var(--red);
+    border-color: var(--white);
+}
+.red_bg .red_btn:hover {
+    background-color: transparent;
+    color: var(--white);
+}
+#pageScrolled {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: rgb(218, 218, 218);
+    height: 50px;
+    width: 50px;
+    font-size: 23px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+button#pageScrolled.show {
+    display: flex;
+}
+/* ========== Header ========== */
+.header.bg-dark {
+    background-color: transparent !important;
+    z-index: 9999;
+    padding: 4rem 0;
+    transition: all 0.3s;
+}
+.header_scrolled .header.bg-dark {
+    background-color: #000000 !important;
+    padding: 2rem 0;
+}
+.header nav a:not(a.navbar-brand) {
+    font-weight: 700;
+    line-height: 2.4rem;
+    margin-left: 5rem;
+}
+
+/* ========== Hero section CSS ========== */
+.hero_sec .particles-js-canvas-el {
+    position: absolute;
+    inset: 0;
+}
+.hero_sec {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+    position: relative;
+    text-align: center;
+    padding: 37rem 0 32rem;
+}
+.hero_sec::before {
+    content: '';
+    background-image: url('../images/hero-bg.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    position: absolute;
+    inset: 0;
+    opacity: 0.1;
+}
+.hero_sec .container {
+    z-index: 1;
+    position: relative;
+}
+.hero_sec h1 + p {
+    max-width: 90rem;
+    margin: 0 auto 5.5rem;
+}
+
+/* ========== Discover Section ========== */
+.discover_sec {
+    background: linear-gradient(0, #000000 16.49%, #C8191C 265%);
+}
+.discover_sec .img_box {
+    margin-bottom: 2rem;   
+}
+.discover_sec .about_part .img_box {
+    padding-right: 8rem;
+    border-right: 0.2rem solid var(--white);
+    margin-bottom: 10rem;
+    height: 50rem;
+}
+.discover_sec .about_part .img_box img {
+    height: 100%;
+    width: 100%;
+}
+.discover_sec .about_part .img_box + p {
+    max-width: 54rem;
+}
+.discover_sec .about_part .content {
+    padding-left: 8rem;
+}
+.discover_sec .about_part .content h3 {
+    margin: 1.8rem 0 10rem;
+}
+
+/* ========== Super Section CSS =========== */
+.super_sec {
+    background: linear-gradient(180deg, #000000 37.37%, #C8191C 231.27%);
+}
+.super_sec p {
+    margin-top: 11.5rem;
+    max-width: 48.5rem;
+}
+.super_sec .team_galary {
+    margin-left: 8rem;
+}
+/* ============ Service Section CSS ============ */
+
+.service_sec {
+    background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
+}
+.service_sec .service_block {
+    max-width: 68rem;
+}
+.service_sec .service_part {
+    gap: 15rem;
+}
+.service_sec .service_block .inner {
+    border: 0.2rem solid var(--white);
+    padding:  5rem;
+}
+.service_sec .service_block img {
+    height: 32.4rem;
+    width: 100%;
+}
+.service_sec h5 {
+    margin: 5rem 0 2rem;
+}
+
+/* ============= Why section ============= */
+
+.why_sec {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+}
+.why_sec h4 {
+    font-size: 3rem;
+    line-height: 4.4rem;
+    margin:  3rem 0;
+}
+
+/* ============== Horoscope Section ============= */
+.horoscope_sec {
+    background: linear-gradient(0deg, #000000 16.49%, #C8191C 260%);
+
+}
+.horoscope_sec img {
+    margin-right: 6rem;
+}
+.horoscope_sec .content {
+    max-width: 18rem;
+}
+.horoscope_sec .content h4 {
+    margin-bottom: 1rem;
+}
+.horoscope_sec .row:not(:last-child) > div:not(:last-child) {
+    margin-right: 8rem;
+}
+.horoscope_sec h2 {
+    font-size: 10rem;
+    line-height: 13.6rem;
+}
+.horoscope_sec h2:not(.is-visible) {
+    visibility: hidden;
+}
+
+/* =========== Appointment Section  =========== */
+
+.appointment_sec {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+}
+.gap_80 {
+    gap: 8rem;
+}
+.appointment_sec form > div.row {
+    margin-left: calc(var(--bs-gutter-x) * -3);
+    margin-right: calc(var(--bs-gutter-x) * -3);
+}
+.appointment_sec form > div.row > div {
+    padding-left: calc(var(--bs-gutter-x) * 3);
+    padding-right: calc(var(--bs-gutter-x) * 3);
+}
+form label.form-label {
+    font-weight: 700;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+form input.form-control,
+form select.form-select {
+    border: 0.2rem solid var(--white);
+    padding: 1rem 3rem;
+    background-color: transparent;
+    outline: none;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    color: var(--white);
+    height: 10rem;
+    margin-bottom: 8rem;
+}
+form select.form-select option {
+    background-color: #000;
+    text-transform: lowercase;
+}
+form input.form-control:focus,
+form select.form-select:focus {
+    color: var(--white);
+    background-color: transparent;
+    border-color: var(--white);
+    outline: 0;
+    box-shadow: none;
+}
+form input::placeholder {
+    opacity: 0;
+    color: var(--white) !important;
+}
+
+/* ======== Get Started Section ============ */
+.get_started_sec::after {
+    content: '';
+    background: linear-gradient(180deg, #514242 -74.63%, #2E0A0A 38.7%, #000000 151.34%);
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+}
+.get_started_sec::before {
+    content: '';
+    background-image: url(../images/wheel-2.svg);
+    opacity: 0.1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 92% 100%;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+.get_started_sec p {
+    max-width: 90rem;
+    margin: 2rem auto 5rem;
+}
+
+/* =========== Membership Section CSS =========== */
+.membership_sec {
+    background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
+}
+.membership_sec .card_block {
+    max-width: 46.5rem;
+}
+.membership_sec .card_inner {
+    border: 0.2rem solid var(--white);
+    padding: 6rem 7.3rem;
+}
+.membership_sec .card_block h3 {
+    margin: 3rem 0;
+}
+.membership_sec h3 span {
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+}
+.membership_sec .card_block li {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+.membership_sec .card_block li::before {
+    content: '';
+    background-image: url(../images/check-mark.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    margin-right: 2rem;
+}
+.membership_sec .card_block a {
+    margin-top: 6rem;
+}
+
+/* ========== Client Section ========== */
+
+.client_sec {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+}
+.bottom_arrow {
+    height: 34.5rem;
+    width: 0.2rem;
+    display: block;
+    background-color: var(--white);
+    position: relative;
+}
+.bottom_arrow::after {
+    content: '';
+    display: block;
+    height: 1.1rem;
+    width: 1.1rem;
+    border-top: 0.2rem solid var(--white);
+    border-left: 0.2rem solid var(--white);
+    transform: translate(-50%, 50%) rotate(-135deg);
+    position: absolute;
+    left: 50%;
+    bottom: 0.6rem;
+}
+.swiper-button-next, .swiper-button-prev {
+    display: inline-block;
+    position: absolute;
+    top: 32%;
+    z-index: 1;
+    left: 0;
+    right: auto;
+    margin-top: 0;
+}
+.swiper-button-next {
+    right: 0;
+    left: auto;
+}
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 3.5rem;
+    color: var(--white);
+    opacity: 1 !important;
+}
+.client_sec .swiper-slide-next .card,
+.client_sec .swiper-slide-active .card {
+    padding: 0 7.5rem;
+    max-width: 62.5rem;
+}
+.client_sec .swiper-slide-active .card {
+    margin-left: auto;
+}
+.client_sec .swiper-slide-next .card {
+    margin-right: auto;
+}
+.client_sec .card img {
+    height: 51rem;
+}
+.client_sec .card p {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.client_sec .card p::after {
+    content: '';
+    width: 10rem;
+    height: 8.5rem;
+    display: block;
+    background-image: url('../images/quote.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    top: -5rem;
+    left: 0;
+    left: -3rem;
+}
+.client_sec .card img + div {
+    opacity: 0;
+}
+.client_sec .swiper-slide-next .card img + div,
+.client_sec .swiper-slide-active .card img + div {
+    opacity: 1;
+}
+.client_sec .card h6 {
+    color: var(--white);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+/* ========== Blog Section CSS =========  */
+.blog_sec {
+    background: linear-gradient(0deg, #000000 16.49%, #C8191C
+    260%);
+}
+.blog_sec > div > .row {
+    margin-left: calc(var(--bs-gutter-x) * -1.7);
+    margin-right: calc(var(--bs-gutter-x) * -1.7);
+}
+.blog_sec > div > .row > div {
+    padding-left: calc(var(--bs-gutter-x) * 1.7);
+    padding-right: calc(var(--bs-gutter-x) * 1.7);
+}
+.blog_sec img {
+    width: 100%;
+    max-height: 45rem;
+    height: 100%;
+}
+.blog_sec img + h6 {
+    margin: 6rem 0 2rem;
+}
+.blog_sec a {
+    color: #0085FF;
+}
+
+/* ========== FAQ Section ============= */
+.faq_sec {
+    background: linear-gradient(180deg, #000000 16.49%, #C8191C
+    260%);
+}
+.faq_sec .faq_part {
+    max-width: 110rem;   
+}
+.faq_sec li {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.faq_sec .faq_ques {
+    padding: 2rem 3rem;
+    background: rgba(51, 51, 51, 0.5);
+    cursor: pointer;
+    position: relative;
+}
+.faq_sec .active .faq_ques {
+    margin-bottom: 0.2rem;
+}
+.faq_sec .faq_part h6 {
+    color: var(--white);
+    transition: all 0.3s;
+    position: relative;
+}
+.faq_sec .faq_ques:hover h6 {
+    color: var(--red);
+}
+.faq_sec .active h6 {
+    color: var(--red);
+}
+.faq_sec h6 i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.faq_sec .active h6 i {
+    transform: translateY(-50%) rotate(180deg);
+}
+.faq_sec .faq_ans {
+    position: relative;
+    padding: 2rem 3rem;
+    background: rgba(200, 25, 28, 0.1);
+    display: none;
+}
+.faq_sec .active .faq_ans {
+    display: block;
+}
+.faq_sec .faq_ans p {
+    border-left: 0.3rem solid var(--red);
+    padding-left: 1rem;
+}
+/* =========== Footer CSS =========== */
+
+footer {
+    background: linear-gradient(0deg, #000000 36.84%, #C8191C 223.16%);
+    padding-bottom: 15rem;
+}
+footer ul {
+    max-width: 32rem;
+}
+footer ul li {
+    display: block;
+}
+footer ul li:not(:first-child) {
+    margin-top: 2rem;
+}
+footer > div > div:first-of-type {
+    padding: 8rem 0;
+    border-top: 0.2rem solid var(--white);
+}
+footer > div > div:last-of-type {
+    border-bottom: 0.2rem solid var(--white);
+    padding-bottom: 4.5rem;
+}
+
+/* ==================================
+========== RESPONSIVE CSS ===========
+===================================== */
+
+@media screen and (max-width: 1919px) {
+    h1 {
+        font-size: 12rem;
+        line-height: 15rem;
+    }
+    h2 {
+        font-size: 10rem;
+        line-height: 14rem;
+    }
+    .service_sec .service_block {
+        max-width: 65rem;
+    }
+    .membership_sec .card_inner {
+        padding: 6rem;
+    }
+}
+
+@media screen and (max-width: 1649px) {
+    h1 {
+        font-size: 10rem;
+        line-height: 13rem;
+    }
+    h2,
+    .horoscope_sec h2 {
+        font-size: 8rem;
+        line-height: 10rem;
+    }
+    h3 {
+        font-size: 7rem;
+        line-height: 10rem;
+    }
+    h4 {
+        font-size: 3.5rem;
+        line-height: 5rem;
+    }
+    h5 {
+        font-size: 4rem;
+        line-height: 6rem;
+    }
+    .gap_80 {
+        gap: 3rem;
+    }
+    .hero_sec {
+        padding: 30rem 0 22rem;
+    }
+    .discover_sec .img_box {
+        width: 14rem;
+        margin: 0 auto 2rem;
+    }
+    .discover_sec .about_part .img_box {
+        height: 45rem;
+        width: 100%;
+    }
+    .super_sec p {
+        margin-top: 18rem;
+    }
+    .service_sec .service_part {
+        gap: 8rem;
+    }
+    .service_sec .service_block {
+        max-width: 60rem;
+    }
+    .horoscope_sec img {
+        width: 14rem;
+        margin-right: 4rem;
+    }
+    .horoscope_sec .row:not(:last-child) > div:not(:last-child) {
+        margin-right: 6rem;
+    }
+    form label.form-label {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+    .appointment_sec form > div.row {
+        margin-left: calc(var(--bs-gutter-x) * -2);
+        margin-right: calc(var(--bs-gutter-x) * -2);
+    }
+    .appointment_sec form > div.row > div {
+        padding-left: calc(var(--bs-gutter-x) * 2);
+        padding-right: calc(var(--bs-gutter-x) * 2);
+    }
+    
+    form input.form-control, form select.form-select {
+        height: 8rem;
+        margin-bottom: 6rem;
+    }
+    .membership_sec .card_inner {
+        padding: 5rem;
+    }
+    .bottom_arrow {
+        height: 25rem;
+    }
+}
+
+
+@media screen and (max-width: 1399px) {
+    h1 {
+        font-size: 8rem;
+        line-height: 10rem;
+        margin-bottom: 4rem;
+    }
+    h3 {
+        font-size: 6rem;
+        line-height: 8rem;
+    }
+    h4 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    h5 {
+        font-size: 3.5rem;
+        line-height: 5rem;
+    }
+    h6 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .pt_200 {
+        padding-top: 15rem;
+    }
+    .pb_200 {
+        padding-bottom: 15rem;
+    }
+    .pt_100 {
+        padding-top: 7.5rem;
+    }
+    .pb_100 {
+        padding-bottom: 7.5rem;
+    }
+    .mt_100 {
+        margin-top: 7.5rem;
+    }
+    .mb_100 {
+        margin-bottom: 7.5rem;
+    }
+    .mb_80 {
+        margin-bottom: 5rem;
+    }
+    .red_btn  {
+        width: 25rem;
+        height: 6rem;
+    }
+    .discover_sec .img_box {
+        width: 12rem;
+    }
+    .discover_sec .img_box img {
+        width: 100%;
+    }
+    .discover_sec .about_part .img_box {
+        height: 37rem;
+        padding-right: 5rem;
+        margin-bottom: 7rem;
+    }
+    .discover_sec .about_part .content {
+        padding-left: 5rem;
+    }
+    .discover_sec .about_part .content h3 {
+        margin: 1.8rem 0 7rem;
+    }
+    h2, .horoscope_sec h2 {
+        font-size: 7rem;
+        line-height: 8rem;
+    }
+    .super_sec p {
+        margin-top: 15rem;
+    }
+    .super_sec .team_galary {
+        margin-left: 5rem;
+    }
+    .service_sec .service_part {
+        gap: 5rem;
+    }
+    .service_sec .service_block {
+        max-width: 53rem;
+    }
+    .service_sec .service_block .inner {
+        padding: 3.3rem;
+    }
+    .service_sec h5 {
+        margin: 4rem 0 1rem;
+    }
+    .why_sec p {
+        max-width: 83%;
+        margin: 0 auto;
+    }
+    .why_sec img {
+        width: 12rem;
+        margin: 0 auto;
+    }
+    .why_sec h4 {
+        line-height: 4rem;
+        margin: 3rem 0 1.5rem;
+    }
+    .horoscope_sec img {
+        width: 10rem;
+        margin-right: 2rem;
+    }
+    .horoscope_sec img {
+        width: 10rem;
+        margin-right: 2rem;
+    }
+    .appointment_sec form > div.row {
+        margin-left: calc(var(--bs-gutter-x) * -1);
+        margin-right: calc(var(--bs-gutter-x) * -1);
+    }
+    .appointment_sec form > div.row > div {
+        padding-left: calc(var(--bs-gutter-x) * 1);
+        padding-right: calc(var(--bs-gutter-x) * 1);
+    }
+    form input.form-control, form select.form-select {
+        padding: 1rem 2rem;
+        font-size: 2rem;
+    }
+    .membership_sec .card_inner {
+        padding: 3rem;
+    }
+    .membership_sec .card_block li::before {
+        height: 3rem;
+        width: 3rem;
+        margin-right: 1rem;
+    }
+    .membership_sec .card_block a {
+        margin-top: 4rem;
+    }
+    .membership_sec .card_block a {
+        margin-top: 4rem;
+    }
+    .bottom_arrow {
+        height: 20rem;
+    }
+    .client_sec .card img {
+        height: 35rem;
+    }
+    .client_sec .swiper-slide-next .card, 
+    .client_sec .swiper-slide-active .card {
+        padding: 0 5rem;
+        max-width: 45rem;
+    }
+    .client_sec .card p::after {
+        width: 7rem;
+        height: 6rem;
+        top: -3rem;
+        left: -2rem;
+    }
+    .blog_sec > div > .row {
+        margin-left: calc(var(--bs-gutter-x) * -1);
+        margin-right: calc(var(--bs-gutter-x) * -1);
+    }
+    .blog_sec > div > .row > div {
+        padding-left: calc(var(--bs-gutter-x) * 1);
+        padding-right: calc(var(--bs-gutter-x) * 1);
+    }
+    .blog_sec img {
+        max-height: 35rem;
+    }
+    .blog_sec img + h6 {
+        margin: 2rem 0 0;
+    }
+    footer {
+        padding-bottom: 8rem;
+    }
+    footer > div > div:first-of-type {
+        padding: 5rem 0;
+    }
+    footer ul {
+        min-width: 32rem;
+    }
+    footer div div div:not(:last-child) ul {
+        margin-bottom: 5rem;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .header.bg-dark {
+        padding: 3rem 0;
+    }
+    h1 {
+        font-size: 7rem;
+        line-height: 9rem;
+        margin-bottom: 3rem;
+    }
+    h2, .horoscope_sec h2 {
+        font-size: 6rem;
+    }
+    h3 {
+        font-size: 5rem;
+        line-height: 7rem;
+    }
+    h4 {
+        font-size: 2.5rem;
+        line-height: 2rem;
+    }
+    h5 {
+        font-size: 3rem;
+        line-height: 5rem;
+    }
+    .mt_100 {
+        margin-top: 5rem;
+    }
+    .mb_100 {
+        margin-bottom: 5rem;
+    }
+    header {
+        padding: 2rem 0;
+    }
+    .hero_sec {
+        padding: 30rem 0 17rem;
+    }
+    .discover_sec .img_box {
+        width: 9rem;
+    }
+    .discover_sec .about_part .content h3 {
+        margin: 1.8rem 0 12rem;
+    }
+    .super_sec p {
+        margin-top: 10rem;
+    }
+    .service_sec .service_part {
+        gap: 4rem;
+    }
+    .service_sec .service_block {
+        max-width: 45rem;
+    }
+    .why_sec img {
+        width: 9rem;
+    }
+    .why_sec h4 {
+        font-size: 2.5rem;
+    }
+    .horoscope_sec img {
+        width: 9rem;
+    }
+    .horoscope_sec .row:not(:last-child) > div:not(:last-child) {
+        margin-right: 3rem;
+    }
+    form input.form-control, form select.form-select {
+        margin-bottom: 4rem;
+    }
+    .membership_sec .red_block {
+        order: 3;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: 25%;
+    }
+    .client_sec .swiper-slide-next .card, 
+    .client_sec .swiper-slide-active .card {
+        padding: 0 2.5rem;
+        max-width: 37rem;
+    }
+    .client_sec .card p::after {
+        width: 6rem;
+        height: 5rem;
+        top: -2.5rem;
+        left: -1.5rem;
+    }
+    footer div div div:not(:last-child) ul {
+        margin-bottom: 1rem;
+    }
+    footer ul li:not(:first-child) {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    h1 {
+        font-size: 5rem;
+        line-height: 6rem;
+        margin-bottom: 2rem;
+    }
+    h4,
+    .why_sec h4 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    h3,
+    h2, .horoscope_sec h2 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    h6 {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+    .mb_80 {
+        margin-bottom: 4rem;
+    }
+    .pt_200 {
+        padding-top: 10rem;
+    }
+    .pb_200 {
+        padding-bottom: 10rem;
+    }
+    .red_btn {
+        width: 20rem;
+        height: 5.5rem;
+        font-size: 2rem;
+    }
+    .header img {
+        width: 15rem;
+    }
+    .header nav a:not(a.navbar-brand) {
+        margin: 1.5rem 0;
+    }
+    .header .navbar-collapse {
+        text-align: center;
+        position: absolute;
+        inset: 0;
+        height: 100vh !important;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: -1;
+        backdrop-filter: blur(10px);
+    }
+    .header .navbar-collapse .navbar-nav {
+        justify-content: center;
+        height: 100%;
+    }
+    .header.navbar-dark .navbar-toggler {
+        color: var(--white);
+        border: none;
+        padding: 0;
+        box-shadow: none;
+    }
+    .header.navbar-dark .navbar-toggler-icon {
+        background: none;
+        height: auto;
+        width: auto;
+    }
+    .header.navbar-dark .navbar-toggler-icon i {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .header.navbar-dark button[aria-expanded="false"] i:last-child,
+    .header.navbar-dark button[aria-expanded="true"] i:first-child {
+        display: none;
+    }
+    .header.navbar-dark button[aria-expanded="true"] i:last-child {
+        display: block;
+        font-size: 3rem;
+    }
+    .hero_sec {
+        padding: 22rem 0 12rem;
+    }
+    .about_part {
+        flex-direction: column-reverse;
+    }
+    .discover_sec .about_part .content h3 {
+        margin: 0 0 5rem;
+    }
+    .discover_sec .about_part .content {
+        padding: 0;
+    }
+    .discover_sec .about_part .img_box {
+        padding-right: 3rem;
+        margin: 0 3rem 0 0;
+        max-width: 100%;
+        width: auto;
+        height: 35rem;
+    }
+    .super_sec p {
+        margin: 1rem 0 5rem;
+    }
+    .super_sec .team_galary {
+        margin-left: 0;
+    }
+    .why_sec > div > div > div:not(:last-child) {
+        margin-bottom: 5rem;
+    }
+    .service_sec .service_block {
+        max-width: 55rem;
+    }
+    body .horoscope_sec h2 {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+    form label.form-label {
+        font-size: 1.6rem;
+    }
+    form input.form-control, form select.form-select {
+        height: 6rem;
+        font-size: 1.6rem;
+    }
+    .membership_sec .card_block {
+        max-width: 33rem;
+    }
+    .membership_sec .card_inner {
+        padding: 2.5rem;
+    }
+    .membership_sec .card_block li::before {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .bottom_arrow {
+        height: 15rem;
+        margin-bottom: 0;
+    }
+    .client_sec .client_slider .swiper-wrapper {
+        padding-top: 100px;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        top: 0;
+    }
+    .client_sec .swiper-slide-next .card, .client_sec .swiper-slide-active .card {
+        max-width: 100%;
+        padding: 0 1.5rem;
+    }
+    footer {
+        padding-bottom: 5rem;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .horoscope_sec .row:not(:last-child) > div:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+    .horoscope_sec .row:nth-child(2) > div:nth-child(2),
+    .horoscope_sec .row:nth-child(3) > div:not(:nth-child(2)) {
+        margin-left: auto;
+    }
+    h3, h2, .horoscope_sec h2 {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+    h5 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .pt_200 {
+        padding-top: 7.5rem;
+    }
+    .pb_200 {
+        padding-bottom: 7.5rem;
+    }
+    .hero_sec {
+        padding: 18rem 0 10rem;
+    }
+    .discover_sec .about_part .img_box {
+        height: 25rem;
+        padding-right: 2rem;
+        margin-right: 2rem;
+    }
+    .service_sec .service_block img {
+        height: 25rem;
+    }
+    .service_sec .service_part {
+        gap: 3rem;
+    }
+    .service_sec .service_block .inner {
+        padding: 2.5rem;
+    }
+    .membership_sec .card_block {
+        max-width: 40rem;
+    }
+    footer,
+    footer > div > div:last-of-type {
+        padding-bottom: 3rem;
+    }
+    footer ul {
+        min-width: 24rem;
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    body {
+        font-size: 1.6rem;
+    }
+    h1 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    .red_btn {
+        width: 14rem;
+        height: 4.5rem;
+        font-size: 1.4rem;
+    }
+    .why_sec img,
+    .horoscope_sec img {
+        width: 7rem;
+    }
+    h3, h2, .horoscope_sec h2 {
+        font-size: 3rem;
+    }
+    .client_sec .card img {
+        height: 25rem;
+    }
+    .discover_sec .img_box {
+        width: 6rem;
+    }
+    .appointment_sec form > div.row ,
+    .blog_sec > div > .row{
+        margin-left: calc(var(--bs-gutter-x) * -0.5);
+        margin-right: calc(var(--bs-gutter-x) * -0.5);
+    }
+
+    .appointment_sec form > div.row > div ,
+    .blog_sec > div > .row > div{
+        padding-left: calc(var(--bs-gutter-x) * 0.5);
+        padding-right: calc(var(--bs-gutter-x) * 0.5);
+    }
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 1650px) {
+    .container {
+        max-width: 150rem;
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .container {
+        max-width: 164rem;
+        padding: 0 2rem;
+    }
+}
